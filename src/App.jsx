@@ -1,41 +1,24 @@
 import './App.css'
-import { Button } from './components/Button';
-import { Item1 } from './components/Item1';
-import { Item2 } from './components/Item2';
-import { Item3 } from './components/Item3';
-import { Item4 } from './components/Item4';
-import { Item5 } from './components/Item5';
-import { Item6 } from './components/Item6';
+import { Header } from './components/Header/Header'
+import { Footer } from './components/Footer/Footer'
+import { ItemListContainer } from './components/ItemListContainer/ItemListContainer'
 
 function App() {
-  const prod = { nombre: "Remera", precio: 3000, descripcion: "Azul manga corta" };
+  const arrayProductos = [
+    { nombre: "Remera", precio: 15000, descripcion: "Azul manga corta" },
+    { nombre: "Pantalon", precio: 30000, descripcion: "Verde camuflada" },
+    { nombre: "Gorra", precio: 20000, descripcion: "De equipe de futbol" },
+  ];
+  
+    
   return (
     <>
       <div>
-        <Button texto={"Enviar"} color={"green"} />
-        <Button texto={"Cancelar"} color={"red"} />
-
-        <Item1
-          nombre={prod.nombre}
-          precio={prod.precio}
-          descripcion={prod.descripcion}
-        >
-          <button>es un boton</button>
-        </Item1>
-
-        <Item2 item={prod} />
-        <Item3 {...prod} />
-        <Item4 {...prod} destacado={true} />
-
-        <Item5>
-          <h1>Tiene Childrens</h1>
-          <p>Item 5</p>
-          <p>{prod.nombre}</p>
-          <p>{prod.precio}</p>
-          <p>{prod.descripcion}</p>
-        </Item5>
-
-        <Item6 nombre="Pantalon" precio="15000" />
+        <Header />
+        <ItemListContainer 
+          titulo={"Bien venidos"} 
+          Productos={arrayProductos}/>
+        <Footer />
       </div>
     </>
   )
