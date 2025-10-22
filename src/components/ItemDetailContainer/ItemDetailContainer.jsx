@@ -5,9 +5,9 @@ export const ItemDetailContainer = ({ }) => {
     const [detail, setDetail] = useState({});
 
     useEffect(() => {
-        fetch("/data/productos.json")
+        fetch("/data/products.json")
             .then((res) => {
-                if (!res.or) {
+                if (!res.ok) {
                     throw new Error("Error al cargar los productos");
                 }
 
@@ -15,7 +15,7 @@ export const ItemDetailContainer = ({ }) => {
             })
 
             .then((data) => {
-                const found = data.find((p) => p.id === "3")
+                const found = data.find((p) => p.id === 2);
                 if (found) {
                     setDetail(found);
 

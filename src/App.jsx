@@ -13,10 +13,10 @@ function App() {
     <>
       <div>
         <Header />
-        <ItemListContainer
+        {/* <ItemListContainer
           titulo={"Listado de productos"}
         />
-        
+         */}
         <ItemDetailContainer />
 
         <Footer />

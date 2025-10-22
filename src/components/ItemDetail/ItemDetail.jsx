@@ -3,7 +3,7 @@ import { Item } from "../Item/Item"
 export const ItemDetail = ({ detail }) => {
 
     return (<Item item={detail}>
-        <p>Children</p>
+        <button>Agregar al carrito</button>
     </Item>
     );
 }
