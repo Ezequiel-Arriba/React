@@ -1,23 +1,28 @@
-    export const Nav = () => {
-        return (
-        <nav> 
+import { Link } from 'react-router-dom';
+export const Nav = () => {
+    return (
+        <nav>
             <ul>
                 <li>
-                    <a href="">Home</a>
+                    <Link to={""}> Home </Link>
+                    
                 </li>
                 <li>
-                    <a href="">Productos</a>
+                    <Link to={"/products"}> Productos </Link>
                 </li>
                 <li>
-                    <a href="">Servicios</a>
+                    <Link to={""}> Servicios </Link>
+                    
                 </li>
                 <li>
-                    <a href="">Enpresa</a>
+                    <Link to={""}> Enpresa </Link>
+                    
                 </li>
                 <li>
-                    <a href="">Contacto</a>
+                    <Link to={""}> Contacto </Link>
+                    
                 </li>
             </ul>
-        </nav>  
-        );
-    };
+        </nav>
+    );
+};
