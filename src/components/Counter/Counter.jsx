@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./Count.css";
+
 
 export const Counter = ({ btnText, onConfirm }) => {
     const [count, setCount] = useState(0);

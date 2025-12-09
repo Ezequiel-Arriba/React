@@ -6,7 +6,7 @@ export const ItemList = ({ list }) => {
         <>
             {list.length ? (
                 list.map((prod) => (
-                    <Link to={ `./detail/${prod.id}` } key={prod.id} >
+                    <Link to={ `/products/detail/${prod.id}` } key={prod.id} >
                         <Item item={prod} />
                     </Link>
                 ))

@@ -1,9 +1,10 @@
 import { Nav } from "../Nav/Nav"
+import { Link } from 'react-router-dom';
 
 export const Header = () => {
     return (
         <header>
-            <h2>LOGO</h2>
+            <Link to={"/"}>LOGO</Link>
             <Nav/>
         </header>
     );

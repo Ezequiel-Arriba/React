@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Pulverizador Manual 5L",
     "price": 32.50,
-    "category": "Equipos",
+    "category": "equipos",
     "description": "Pulverizador de presión previa ideal para aplicar insecticidas en jardines y cultivos pequeños.",
     "imageUrl": "/images/Pulverizador Manual 5L.webp"
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "name": "Insecticida Concentrado 1L",
     "price": 18.90,
-    "category": "Químicos",
+    "category": "controldeplagas",
     "description": "Insecticida de amplio espectro para uso agrícola y domiciliario. Controla cucarachas, mosquitos y hormigas.",
     "imageUrl": "/images/Insecticida Concentrado 1L.webp"
   },
@@ -19,7 +19,7 @@
     "id": 3,
     "name": "Equipo Fumigador a Motor 16L",
     "price": 249.99,
-    "category": "Equipos",
+    "category": "equipos",
     "description": "Fumigador motorizado de 2 tiempos para áreas extensas, con tanque de 16 litros y lanza de acero inoxidable.",
     "imageUrl": "/images/Equipo Fumigador a Motor 16L.webp"
   },
@@ -27,7 +27,7 @@
     "id": 4,
     "name": "Trampa Adhesiva para Insectos",
     "price": 6.75,
-    "category": "Accesorios",
+    "category": "controldeplagas",
     "description": "Trampas sin químicos para atrapar moscas, polillas y otros insectos en interiores.",
     "imageUrl": "/images/Trampa Adhesiva para Insectos.jpeg"
   },
@@ -35,7 +35,7 @@
     "id": 5,
     "name": "Guantes de Protección Nitrilo",
     "price": 4.95,
-    "category": "Seguridad",
+    "category": "equipos",
     "description": "Guantes resistentes a productos químicos, ideales para tareas de fumigación y manipulación de pesticidas.",
     "imageUrl": "/images/Guantes de Protección Nitrilo.jpg"
   }
