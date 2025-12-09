@@ -4,23 +4,20 @@ export const Nav = () => {
         <nav>
             <ul>
                 <li>
-                    <Link to={""}> Home </Link>
-                    
+                  <Link to={"/"}> Home </Link>
+
                 </li>
                 <li>
-                    <Link to={"/products"}> Productos </Link>
+                  <Link to={"/products"}> Productos </Link>
                 </li>
                 <li>
-                    <Link to={""}> Servicios </Link>
-                    
+                  <Link to={"/servicios"}> Servicios </Link>
                 </li>
                 <li>
-                    <Link to={""}> Enpresa </Link>
-                    
+                  <Link to={"/enpresa"}> Enpresa </Link>
                 </li>
                 <li>
-                    <Link to={""}> Contacto </Link>
-                    
+                  <Link to={"/contacto"}> Contacto </Link>
                 </li>
             </ul>
         </nav>

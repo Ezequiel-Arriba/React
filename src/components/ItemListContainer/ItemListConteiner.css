@@ -1,0 +1,7 @@
+ p {
+  display: flex;        
+  flex-wrap: wrap;      
+  justify-content: space-around; 
+  align-items: center; 
+  text-align: center;
+  gap: 20px;        }  

@@ -1,10 +1,9 @@
-// estado
-
-//llamado a la base de datos (api o json local)
 
 
+import './ItemListConteiner.css';
 import { useEffect, useState } from "react";
 import { ItemList } from "../ItemList/ItemList";
+
 export const ItemListContainer = ({ titulo }) => {
     const [products, setProducts] = useState([]);
 
@@ -29,10 +28,13 @@ export const ItemListContainer = ({ titulo }) => {
 
 
     return (
+        
         <section>
+            
             <h1>{titulo}</h1>
+            <p>
             <ItemList list={products} />
-
+            </p>        
         </section>
 
     );
