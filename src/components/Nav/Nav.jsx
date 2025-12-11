@@ -10,7 +10,7 @@ export const Nav = () => {
                   <Link to={"/"}> Home </Link>
                 </li>
                 <li>
-                  <Link to={"products/equipos"}> Equipamentos</Link>
+                  <Link to={"products/equipo"}> Equipamentos</Link>
                 </li>
                 <li>
                   <Link to={"products/controldeplagas"}> Control de Plagas  </Link>

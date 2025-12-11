@@ -4,6 +4,7 @@ import './ItemListConteiner.css';
 import { useEffect, useState } from "react";
 import { ItemList } from "../ItemList/ItemList";
 import { useParams } from "react-router-dom";
+import { getProducts } from '../../services/products';
 
 
 export const ItemListContainer = ({ titulo }) => {
@@ -12,22 +13,8 @@ export const ItemListContainer = ({ titulo }) => {
 
 
     useEffect(() => {
-        fetch("/data/products.json")
-            .then((res) => {
-                if (!res.ok) {
-                    throw new Error("Error al cargar los productos");
-                }
-
-                return res.json();
-            })
-            .then((data) => {
-                if (category) {
-                    setProducts(data.filter((prod) => prod.category === category));
-                    } else {
-                setProducts(data);
-                }
-            })
-
+        getProducts(category)
+            .then((data) => setProducts(data))         
             .catch((err) => {
                 console.log(err);
             });
