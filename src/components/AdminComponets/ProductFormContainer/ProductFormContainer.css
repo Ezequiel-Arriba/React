@@ -1,0 +1,61 @@
+/* Estilos generales del formulario */
+
+
+form {
+    background: #05010115;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+/* Contenedor para etiqueta y campo */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+/* Estilos para etiquetas */
+label {
+    display: block; /* Para que ocupe su propia línea */
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #f0e7e7;
+}
+
+/* Estilos para campos de entrada */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Asegura que el padding no aumente el ancho */
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+/* Estilos para el botón de "Agregar Producto" */
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
